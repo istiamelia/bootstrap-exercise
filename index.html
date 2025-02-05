@@ -11,9 +11,20 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="margin: 0; padding: 0">
+  <style>
+    .movie-card img {
+      height: 100%;
+      object-fit: cover;
+    }
+    .movie-card div {
+      box-shadow: 3px 5px 15px grey;
+    }
+  </style>
+  <body style="margin: 0; padding: 0" class="bg-dark">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-dark border-body text-white g-0">
+    <nav
+      class="navbar navbar-expand-lg bg-dark border-body text-white sticky-top"
+    >
       <div class="container-fluid">
         <a class="navbar-brand text-white" href="#">MovieLand</a>
         <button
@@ -82,58 +93,104 @@
     </nav>
 
     <!-- JUMBOTRON -->
-    <div class="bg-dark text-white card g-0" style="border-radius: 0">
+    <div class="bg-dark text-white card" style="border-radius: 0">
       <img
         src="assets/dylan-freedom-hYkWbfpxYs8-unsplash (1).jpg"
         class="card-img"
-        style="height: 400px; object-fit: cover"
+        style="height: 50vh; object-fit: cover"
         alt=""
       />
-      <div class="card-img-overlay">
+      <div
+        class="bg-dark"
+        style="
+          opacity: 0.7;
+          height: 50vh;
+          position: absolute;
+          z-index: 1;
+          width: 100%;
+        "
+      ></div>
+      <div class="card-img-overlay p-5" style="position: absolute; z-index: 2">
         <h5 class="card-title">Welcome to MovieLand</h5>
-        <p class="card-text">
+        <p class="card-text fs-6">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
           placeat esse repudiandae velit ipsam maxime delectus nostrum
           voluptates reprehenderit necessitatibus, ducimus amet debitis facilis
-          voluptate quae vero, nisi voluptatem rem.
+          voluptate quae vero, nisi voluptatem rem. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Ipsam corporis dolor quidem facilis
+          incidunt placeat beatae earum recusandae, adipisci, fugit inventore.
+          Amet, velit maxime. Obcaecati quis deserunt odio impedit ex.
         </p>
         <button class="btn btn-primary">Learn More</button>
       </div>
     </div>
 
-    <div class="container-sm mt-5 border p-5">
-      <form>
-        <div class="mb-3">
-          <h3>Login</h3>
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-          <div id="emailHelp" class="form-text">
-            We'll never share your email with anyone else.
-          </div>
+    <div class="container d-flex mt-5 movie-card">
+      <div class="card bg-dark text-white border me-4" style="width: 15rem">
+        <img
+          src="assets/samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body" style="font-size: 0.8em">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-          />
+      </div>
+      <div class="card bg-dark text-white border me-4" style="width: 15rem">
+        <img
+          src="assets/filip-mroz-VH7NuUbj104-unsplash.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body" style="font-size: 0.8em">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
-            >Check me out</label
-          >
+      </div>
+      <div class="card bg-dark text-white border me-4" style="width: 15rem">
+        <img
+          src="assets/maksim-istomin-BSx5n20J-qg-unsplash.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body" style="font-size: 0.8em">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+      </div>
+      <div class="card bg-dark text-white border me-4" style="width: 15rem">
+        <img
+          src="assets/omk-6DhD3VYd9q8-unsplash.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body" style="font-size: 0.8em">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card bg-dark text-white border me-4" style="width: 15rem">
+        <img
+          src="assets/samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body" style="font-size: 0.8em">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
     </div>
 
     <script
